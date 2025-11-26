@@ -15,3 +15,12 @@ function  reverseString(strr) {
     return reversed;
 }
 console.log("Reversed string without using reverse function is:", reverseString("Hello World"));
+
+function reverse2(str) {
+    let reverse = "";
+    for(let char of str) {
+        reverse = char+ reverse;
+    }
+    return reverse;
+}
+console.log(reverse2("Raj"));
