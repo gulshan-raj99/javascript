@@ -16,3 +16,20 @@ function isPalindrome(str) {
 
 isPalindrome("madam");
 isPalindrome("hello");
+
+function isPalindrome(str) {
+    let reveserd = "";
+    for(let char of str) {
+        reveserd = char + reveserd;
+    }
+    return str == reveserd;
+}
+console.log(isPalindrome("madam"));
+
+function isPalindrome2(num) {
+    const str = num.toString();
+    const reserved = str.split("").reverse().join("");
+    return str == reserved;
+}
+console.log(isPalindrome2(121));
+console.log(isPalindrome2(345));
