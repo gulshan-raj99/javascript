@@ -34,3 +34,17 @@ function secondElement(arr){
     return unique[1];
 }
 console.log(secondElement([10,20,45,60,26]));
+
+const large = (arr) => {
+    let unique = [... new Set(arr)];
+    unique.sort((a,b) => b-a);
+    return unique[0];
+}
+console.log(large([22,44,55,11,66,47]));
+
+const third = (arr) => {
+    let unique = [... new Set(arr)];
+    unique.sort((a,b) => b-a);
+    return unique[2];
+}
+console.log(third([22,45,66,25,11]));
