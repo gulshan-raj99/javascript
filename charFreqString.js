@@ -10,3 +10,18 @@ function charFrequency(str) {
     return map;
 }
 console.log(charFrequency("hello"));
+
+// 2nd method
+
+const charCount = (str)=> {
+    let result = {};
+    for(let char of str) {
+        if(result[char]){
+            result[char] ++;
+        } else {
+            result[char] = 1;
+        }
+    }
+    return result;
+}
+console.log(charCount("Banana"));
