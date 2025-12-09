@@ -25,3 +25,20 @@ const charCount = (str)=> {
     return result;
 }
 console.log(charCount("Banana"));
+
+//3rd way
+function occurence(str){
+    let result = {};
+   
+    for(let i =0; i<str.length;i++){
+      let ch = str[i];
+      if(result[ch]){
+          result[ch]++;
+      }else{
+          result[ch]=1;
+      }
+    }
+    return result;
+}
+//const input = prompt("Enter a string "); -> prompt is only for browser
+console.log(occurence(input));
