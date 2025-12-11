@@ -33,3 +33,15 @@ function isPalindrome2(num) {
 }
 console.log(isPalindrome2(121));
 console.log(isPalindrome2(345));
+
+function isPalindrome3(num){
+    let original = num;
+    let rev = 0;
+    while(num>0){
+        let digit = num % 10;
+        rev = rev * 10 + digit;
+        num = (num- digit) / 10;
+    }
+    return rev === original;
+}
+console.log(isPalindrome3(121));
