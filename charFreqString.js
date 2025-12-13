@@ -41,4 +41,16 @@ function occurence(str){
     return result;
 }
 //const input = prompt("Enter a string "); -> prompt is only for browser
-console.log(occurence(input));
+//console.log(occurence(input));
+
+// ternary operator = condition ? valueIfTrue : valueIfFalse;
+function frequency(str){
+    let freq = {};
+    
+    for(let i = 0;i<str.length;i++){
+        let ch = str[i];
+        freq[ch] = freq[ch]? freq[ch] +1 : 1;
+    }
+    return freq;
+}
+console.log(frequency("banana"));
