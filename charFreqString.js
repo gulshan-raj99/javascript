@@ -46,6 +46,7 @@ function occurence(str){
 // ternary operator = condition ? valueIfTrue : valueIfFalse;
 function frequency(str){
     let freq = {};
+    str = str.toLowerCase();
     
     for(let i = 0;i<str.length;i++){
         let ch = str[i];
@@ -53,4 +54,4 @@ function frequency(str){
     }
     return freq;
 }
-console.log(frequency("banana"));
+console.log(frequency("baBnana"));
