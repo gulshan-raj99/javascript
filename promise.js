@@ -26,3 +26,11 @@ function getData() {
     });
 }
 getData().then(msg => console.log(msg));
+
+// example
+const promise1 = new Promise((resolve,reject) => {
+    setTimeout(() => {
+        resolve("Promise1 resolved");
+    },2000);
+});
+promise1.then((value) => console.log(value));
